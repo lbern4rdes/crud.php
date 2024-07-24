@@ -6,6 +6,7 @@
     $linha = $consulta->fetch(PDO::FETCH_ASSOC);
 ?>
 
+
   <form action="editar.php" method="post">
     Nome: <input type="text" name="nome" value="<?php echo $linha['nome'] ?>" id="nome"/><br>
     CPF: <input type="text" name="cpf" value="<?php echo $linha['cpf'] ?>" id="cpf"/><br>
