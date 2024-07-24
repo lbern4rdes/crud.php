@@ -10,7 +10,7 @@ try {
 
   while ($linha = $consulta->fetch(PDO::FETCH_ASSOC)) {
 
-    echo "<tr><td>$linha[id]</td><td>$linha[nome]</td><td>$linha[cpf]</td><td>$linha[telefone]</td><td><a href='formEditar.php?id=$linha[id]'>Editar</a> - <a href='formExcluir.php?id=$linha[id]'>Excluir</a></td></tr>";
+    echo "<tr><td>$linha[id]</td><td>$linha[nome]</td><td>$linha[cpf]</td><td>$linha[telefone]</td><td><a href='formEditar.php?id=$linha[id]'>Editar</a> - <a href='Excluir.php?id=$linha[id]'>Excluir</a></td></tr>";
   }
 
   echo "</table>";
